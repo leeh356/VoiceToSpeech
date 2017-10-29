@@ -9,18 +9,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
-    <!-- permission to read provider -->
+
+    <activity
+        android:name="com.example.leehengpei.voicetospeech.CreateNote"
+        android:label="@string/title_activity_create_note" >
+        <intent-filter>
+            <action android:name="com.example.leehengpei.voicetospeech.CreateNote" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name="com.example.leehengpei.voicetospeech.View_Note"
+            android:label="View Note" >
+            <intent-filter>
+                <action android:name="com.example.leehengpei.voicetospeech.View_Note" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.example.leehengpei.voicetospeech.Edit_Note"
+            android:label="Edit Note" >
+            <intent-filter>
+                <action android:name="com.example.leehengpei.voicetospeech.Edit_Note" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- permission to read provider -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
+        <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    </application>
 </manifest>

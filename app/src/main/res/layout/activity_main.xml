@@ -15,20 +15,19 @@
         android:layout_height="23dp"
         android:layout_weight="0.10"
         android:backgroundTint="@android:color/holo_orange_dark"
-        android:text="Record Audio"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:text="Record Audio"/>
 
     <TextView
         android:id="@+id/timer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:text="0:00.0"
         android:textSize="50sp"
         android:textStyle="bold"
         android:typeface="monospace"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/cancel_button"
@@ -36,9 +35,8 @@
         android:layout_height="23dp"
         android:layout_weight="0.10"
         android:elevation="0dp"
-        android:text="Cancel"
-        android:visibility="visible" />
-
+        android:visibility="visible"
+        android:text="Cancel"/>
 
     <Button
         android:id="@+id/share_button"
@@ -46,6 +44,30 @@
         android:layout_height="23dp"
         android:layout_weight="0.10"
         android:backgroundTint="@android:color/holo_green_light"
-        android:text="Share" />
+        android:text="Share"/>
 
-</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:clickable="true"
+        android:visibility="visible"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/commentslist"
+        android:layout_height="150dp"
+        android:layout_weight="0.20" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+    </LinearLayout>

@@ -24,6 +24,7 @@ import java.util.Locale;
 
 /**
  * Created by Lee Heng Pei on 4/10/2017.
+ * Not used in the MainActivity class (for reference only)
  */
 
     public class RecordingActivity extends AppCompatActivity implements View.OnClickListener {
